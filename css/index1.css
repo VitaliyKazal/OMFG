@@ -1,3 +1,58 @@
-ul#main li {
-	display: inline;
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+.main li {
+	display: inline-block;
+	padding: 5px;
+	vertical-align: middle;
+	padding-right: 40px;
+}
+.main li:last-child{
+	padding-right: 0px; 
+}
+.main{
+	display: inline-block;
+	vertical-align: middle;
+	}
+.main li a {
+	font-size: 1.3em;
+	color: #b6b6e0;
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: middle;
+	transition: all 1s;
+}
+.main li a:hover{
+	color: #e20b0b;
+}
+.konteiner {
+	background: #24292e;
+	line-height: 30px;
+	text-align: right;
+	max-width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+img{
+	border-radius: 70%; /* Она встала не по центру потому что он не разрешает элементам изменять себя*/
+	vertical-align: middle;
+}
+.picture{
+	float: left;
+	border-radius: 1px solid black;
+	margin: 1px;
+}
+.golova {
+	padding: 3px;
+	display: block;
+	width: 100%;
+	background: rgba(29, 20, 99, 0.64);
+}
+*{
+	box-sizing: border-box;
 }
