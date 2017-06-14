@@ -1,0 +1,114 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+.main li {
+	display: inline-block;
+	padding: 5px;
+	vertical-align: middle;
+	padding-right: 40px;
+}
+.main li:last-child{
+	padding-right: 0px; 
+}
+.main{
+	display: inline-block;
+	vertical-align: middle;
+	}
+.main li a {
+	font-size: 1.3em;
+	color: #b6b6e0;
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: middle;
+	transition: all 1s;
+}
+.main li a:hover{
+	color: #e20b0b;
+}
+.head {
+	background: #24292e;
+	line-height: 30px;
+	text-align: right;
+	max-height: 79px;
+	max-width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+img{
+	border-radius: 70%; /* Она встала не по центру потому что он не разрешает элементам изменять себя*/
+	vertical-align: middle;
+}
+.picture{
+	float: left;
+	border-radius: 1px solid black;
+	margin: 1px;
+}
+.golova {
+	padding: 3px;
+	display: block;
+	width: 100%;
+	background: rgba(29, 20, 99, 0.64);
+}
+*{
+	box-sizing: border-box;
+}
+.window {
+	display: block;
+	background-image: url(./images/block1.jpg);
+	background-size: 100% 100%;
+	height: 100vh;
+	width: 100vw;
+	}
+h1 {
+	color: black;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 48px;
+}
+p{
+	color: black;
+	display: block;
+	text-align: center;
+	font-size: 36px;
+	background-color: rgba(255, 253, 253, 0.71);
+}
+a.button {
+	
+	color:rgba(241, 234, 235, 0.64);
+	background-color:rgba(8, 5, 25, 0.93);
+	font-weight: 700;
+	padding: .8em 1em calc(.8em + 3px);
+  	border-radius: 3px;
+  	box-shadow: 0 -3px rgb(53,167,110) inset;
+	text-align: center;
+	width: 150px;
+  	display: block;
+  	margin-left: 720px;
+}
+a.button:active{
+	background-color: rgba(234, 233, 239, 0.93);
+	color: rgb(23, 78, 35);
+}
+.girls{
+	background-color: gray;
+	height: 100vh;
+	display: block;
+	text-align: center;
+}
+.pic_boobs {
+	display: inline-block;
+	width: 200px;
+	margin-top: 20px;
+	vertical-align: middle;
+}
+.content{
+	margin-bottom: 20px;
+	margin-top: 60px;
+	text-align: bottom;
+}
