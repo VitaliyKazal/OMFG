@@ -1,4 +1,4 @@
-body{
+body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
@@ -10,10 +10,10 @@ body{
 	vertical-align: middle;
 	padding-right: 40px;
 }
-.main li:last-child{
+.main li:last-child {
 	padding-right: 0px; 
 }
-.main{
+.main {
 	display: inline-block;
 	vertical-align: middle;
 	}
@@ -25,60 +25,61 @@ body{
 	vertical-align: middle;
 	transition: all 1s;
 }
-.main li a:hover{
+.main li a:hover {
 	color: #e20b0b;
 }
-.head {
+.container {
 	background: #24292e;
 	line-height: 30px;
 	text-align: right;
-	max-height: 79px;
+	min-height: 80px;
 	max-width: 980px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-right: 10px;
 	padding-left: 10px;
 }
-img{
+img {
 	border-radius: 70%; /* Она встала не по центру потому что он не разрешает элементам изменять себя*/
 	vertical-align: middle;
 }
-.picture{
+.picture {
 	float: left;
 	border-radius: 1px solid black;
 	margin: 1px;
 }
-.golova {
+.head {
 	padding: 3px;
 	display: block;
 	width: 100%;
 	background: rgba(29, 20, 99, 0.64);
 }
-*{
+* {
 	box-sizing: border-box;
 }
 .window {
-	display: block;
-	background-image: url(./images/block1.jpg);
-	background-size: 100% 100%;
-	height: 100vh;
-	width: 100vw;
+	padding: 30px 0;
+	background-image: url("./images/block1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: calc(100vh - 80px);
 	}
-h1 {
+.window h1 {
+	margin-top: 0;
 	color: black;
-	display: block;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 48px;
 }
-p{
+.window p {
 	color: black;
-	display: block;
 	text-align: center;
-	font-size: 36px;
+	font-size: 24px;
+	line-height: 28px;
 	background-color: rgba(255, 253, 253, 0.71);
 }
-a.button {
+.button {
 	
 	color:rgba(241, 234, 235, 0.64);
 	background-color:rgba(8, 5, 25, 0.93);
@@ -87,19 +88,21 @@ a.button {
   	border-radius: 3px;
   	box-shadow: 0 -3px rgb(53,167,110) inset;
 	text-align: center;
+	text-decoration: none;
 	width: 150px;
-  	display: block;
-  	margin-left: 720px;
+  	display: inline-block;
 }
-a.button:active{
+.button:active {
 	background-color: rgba(234, 233, 239, 0.93);
 	color: rgb(23, 78, 35);
+
 }
-.girls{
+.girls {
 	background-color: gray;
-	height: 100vh;
 	display: block;
 	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .pic_boobs {
 	display: inline-block;
@@ -107,8 +110,13 @@ a.button:active{
 	margin-top: 20px;
 	vertical-align: middle;
 }
-.content{
+.content {
 	margin-bottom: 20px;
 	margin-top: 60px;
 	text-align: bottom;
+}
+.window-contant{
+	margin:0 auto;
+	max-width: 800px;
+	text-align: center;
 }
