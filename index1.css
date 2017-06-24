@@ -1,83 +1,117 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 1010px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 15px;
+}
+
+.row {
+	margin: 0 -15px;
+	clear: both;
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:after,
+.row:before {
+	content: '';
+	display: table;
+}
+
+.clearfix:after,
+.row:after {
+	clear: both;
+}
+
 body {
 	padding: 0;
-	margin: 0 auto;
+	margin: 0;
 	font-family: 'Playfair Display', serif;
 	font-size: 16px;
 	background-color: #f5efef; 
 }
 
-.main li {
+.header {
+	background: rgba(29, 20, 99, 0.64);
+	padding: 10px 0;
+}
+
+.header__container {
+	text-align: right;
+	font-size: 0;
+}
+
+.header__logo {
 	display: inline-block;
-	padding: 5px;
 	vertical-align: middle;
-	padding-right: 40px;
+	width: 40%;
+	text-align: left;
 }
 
-.main li:last-child {
-	padding-right: 0px; 
+.header__logo a {
+	text-decoration: none;
+	display: block;
+	overflow: hidden;
+	max-width: 70px;
+	border-radius: 50%;
 }
 
-.main {
+.header__logo img{
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.header__nav {
+	margin: 0;
+	padding: 0;
 	display: inline-block;
 	vertical-align: middle;
+	width: 60%;
+	text-align: right;
+	font-size: 16px;
 }
 
-.main li a {
+.header__nav__item {
+	display: inline-block;
+	margin-right: 40px;
+	vertical-align: middle;
+}
+
+.header__nav__item:last-child {
+	margin-right: 0px; 
+}
+
+.header__nav__item a {
 	font-size: 1.3em;
 	color: #b6b6e0;
 	text-decoration: none;
 	text-transform: uppercase;
 	vertical-align: middle;
-	transition: all 1s;
+	transition: all 0.3s;
+	padding-bottom: 4px;
+	border-bottom: 4px transparent solid;
 }
 
-.main li a:hover {
+.header__nav__item a:hover {
 	color: #e20b0b;
-}
-
-.container {
-	background: #24292e;
-	line-height: 30px;
-	text-align: right;
-	min-height: 80px;
-	max-width: 980px;
-	margin-right: auto;
-	margin-left: auto;
-	padding-right: 10px;
-	padding-left: 10px;
-}
-
-img {
-	border-radius: 50%; /* Она встала не по центру потому что он не разрешает элементам изменять себя*/
-	vertical-align: middle;
-	max-height: 200px;
-	max-width: 200px;
-}
-
-.picture {
-	float: left;
-	border-radius: 1px solid black;
-	margin: 1px;
-}
-
-.head {
-	padding: 3px;
-	display: block;
-	width: 100%;
-	background: rgba(29, 20, 99, 0.64);
-}
-
-* {
-	box-sizing: border-box;
+	border-color: #e20b0b;
 }
 
 .window {
-	padding: 30px 0;
+	padding: 50px 0 80px 0;
 	background-image: url("./images/block1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: calc(100vh - 80px);
 }
 
 .window h1 {
@@ -100,143 +134,149 @@ img {
 	text-align: center;
 }
 
-.button {
-	color:rgba(241, 234, 235, 0.64);
-	background-color:rgba(8, 5, 25, 0.93);
+.window-contant .button {
+	color: #fff;
+	background-color: rgba(8, 5, 25, 0.8);
 	font-weight: 700;
-	padding: .8em 1em calc(.8em + 3px);
+	padding: 12px 15px 13px;
   	border-radius: 3px;
   	box-shadow: 0 -3px rgb(53,167,110) inset;
 	text-align: center;
 	text-decoration: none;
-	width: 150px;
   	display: inline-block;
+  	transition: all 0.1s ease;
 }
 
-.button:active {
+.button:hover {
 	background-color: rgba(234, 233, 239, 0.93);
 	color: rgb(23, 78, 35);
 }
 
 .girls {
 	background-color: #f5efef;
-	display: inline-block;
-	width: 100%;
-
+	padding: 50px 0 30px;
 }
 
-.girls_container { /*it`s container, in this shit place all my contant*/
-	margin: 0 auto;
-	width: 1000px;
+.girls h2 {
+	margin: 0;
+	text-align: center;
 }
 
-.items_boobs {
+.girls-boods {
 	margin-top: 30px;
 }
 
-.boobs_row {
-	margin: 0 -15px;
-	clear: both;
-}
-.boobs_column {
-	display: block;
+.girls-boods__column {
 	width: 33.3333%;
-	padding:0 15px;
+	padding: 0 15px;
 	float: left;
 }
 
-.boobs_item {
+.girls-boods__item {
 	border: 2px #e1e1e1 solid;
 	background-color: white;
 	min-height: 520px;
 	transition: all 0.3s ease;
 	margin-bottom: 30px;
 }
-.boobs_item:hover .boobs_image {
+.girls-boods__item:hover .girls-boods__image {
 	opacity: 0.8;
 	cursor: pointer;
 }
-.boobs_item:hover {
+
+.girls-boods__item:hover {
 	box-shadow: 0 1px 15px rgba(0,0,0,0.6);
 
 }
-.boobs_image {
+
+.girls-boods__image {
 	min-height: 250px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	transition: all 0.3s ease; 
 }
-.boobs_contant {
+
+.girls-boods__contant {
 	padding: 15px;
 }
-.footer_row {
-	background-color: #f5efef;
-	margin-top: 0;
-}
+
 .footer {
-	max-width: 1000px;
-    margin: 0 auto;
-    padding: 60px 0 60px 0;
-    border-top: 1px #b1a4a4 solid;
-    font-size: 20px;
+	padding: 60px 0;
+	background-color: #f5efef;
 }
-.footer_link {
-	float: right;
-	font-size: 20px;
-	margin-top: -3.5%;
+
+.footer__row {
+	font-size: 0;
 }
-.footer_link h5 {
-	margin-bottom: 5px;
-}	
-.footer_social a {
+
+.footer-col-3 {
+	width: 40%;
 	display: inline-block;
-	margin-right: 8%;
 	vertical-align: middle;
-	line-height: 70px;
-	min-width: 40px;
-	min-height: 40px;
 }
-.footer_social a:last-child {
+
+.footer-col-3 > p {
+	margin: 0;
+	font-size: 14px;
+}
+
+.footer-col-social {
+	width: 60%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.footer__social {
+	text-align: right;
+}
+
+.footer__social h4 {
+	margin: 0;
+	margin-right: 20px;
+	letter-spacing: .5px;
+	font-size: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	text-transform: uppercase;
+}	
+.footer__social__list {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.footer__social__list a {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+}
+
+.footer__social__list a:last-child {
 	margin-right: 0;
+}
+
+.social {
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .social_fb {
 	background: url('./images/icons.png');
-	background-repeat: no-repeat;
-	background-size: cover;
 	background-position: 0 0;
 }
-.socilal_fb a {
-	height: 40px;
-	width: 40px;
-}
+
 .social_vk {
 	background: url('./images/icons.png');
-	background-repeat: no-repeat;
-	background-size: cover;
 	background-position: -168px 0;
 }
-.socilal_vk a {
-	height: 40px;
-	width: 40px;
-}
+
 .social_ok {
 	background: url('./images/icons.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: -127px 0;
+	background-position: -126px 0;
 }
-.socilal_ok a {
-	height: 40px;
-	width: 40px;
-}
+
 .social_twit {
 	background: url('./images/icons.png');
-	background-repeat: no-repeat;
-	background-size: cover;
 	background-position: -42px 0;
-}
-.socilal_twit {
-	height: 40px;
-	width: 40px;
 }
