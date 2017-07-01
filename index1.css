@@ -178,6 +178,7 @@ body {
 	min-height: 520px;
 	transition: all 0.3s ease;
 	margin-bottom: 30px;
+	position: relative;
 }
 .girls-boods__item:hover .girls-boods__image {
 	opacity: 0.8;
@@ -199,6 +200,36 @@ body {
 
 .girls-boods__contant {
 	padding: 15px;
+	height: 300px;
+}
+.girls-boods__contant h4 {
+	text-align: center;
+}
+.button_contant {
+	vertical-align: bottom;
+	color: #fff;
+	background-color: rgba(99, 90, 152, 0.8);
+	font-weight: 700;
+	padding: 12px 15px 10px;
+  	border-radius: 5px;
+  	box-shadow: 0 -2px rgb(53,167,110) inset;
+	text-align: center;
+	text-decoration: none;
+  	display: inline-block;
+  	transition: all 0.1s ease;
+  	margin-left: 54%;
+}
+.contant_price {
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 15px;
+	display: table;
+}	
+
+.contant_price span {
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
 }
 
 .footer {
