@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" type="text/css" href="./price.css">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&amp;subset=cyrillic" rel="stylesheet">
 	<meta charset="UTF-8">
 	<title>Price</title>
 </head>
@@ -10,7 +12,7 @@
 			<div class="header__container clearfix">
 				<div class="header__logo">
 					<a href="#">
-						<img title="Чоткие титьки" src="./images/logo1.jpg" alt="Чоткое лого">
+						<img title="Чоткие титьки" src="./OMFG/images/logo1.jpg" alt="Чоткое лого">
 					</a>					
 				</div>
 
@@ -28,14 +30,26 @@
 
 	<div class="price">
 		<div class="container">
-			<div class="price_photo"></div>
-			<div class="price_description">
-				<div class="price__short"></div>
-				<div class="price__long">
-					<div class="price__long__raiting"></div>
-					<div class="price__long__buy"></div>
+			<div class="row">
+				<div class="col-3">
+					<div class="price_photo">здесь фото</div>
 				</div>
-			</div>
+				<div class="col-9">
+					<div class="price_description">
+						<div class="price__short">короткое описание</div>
+						<div class="price__long"><p>само длинное описание</p>
+							<div class="price__long__raiting"> 
+								<div class="price__raiting__icon">РЕЙТИНГ</div>
+								<div class="price__raiting__available">есть в наличие</div>
+							</div>
+							<div class="price__long__buy"> 
+								<div class="buy__new-buy">цена</div>
+								<div class="buy__now-buy">купить</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
 		</div>
 	</div>
 	
