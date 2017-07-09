@@ -30,6 +30,16 @@ tr:last-child {
 	border-bottom: 2px #adaaaa solid;
 }
 
+th {
+	border-right: 2px #adaaaa solid;
+	background-color: #E9E9E9;
+	padding: 5px 0 5px 0;
+}
+
+th:last-child {
+	border-right: none;
+}
+
 td {
 	border-right: 2px #adaaaa solid;
 	background-color: #d4d4d4;
@@ -188,11 +198,11 @@ table td:last-child {
 	margin-top: 50px;
 }
 
-.price_col {
+.col-5 .col-7 {
 	margin: 0 15px;
 }
 
-.price_photo {
+.price__photo {
 	height: 500px;
 	background-image: url(./images/own.jpg);
 	background-repeat: no-repeat;
@@ -200,33 +210,32 @@ table td:last-child {
 	background-size: cover;
 }
 
-.price__short {
+.price-short {
 	vertical-align: top;
 	margin-bottom: 30px;
 }
 
-.price__short h1 {
+.price-short h1 {
 	font-size: 36px;
 	margin: 0;
 	text-align: center;
 	line-height: 1;
 }
-.price__long p {
+.price-long p {
 	font-size: 18px;
 	line-height: 24px;
 	margin-top: 0;
 }
 
-.price__long__raiting {
+.price-long__raiting {
 	padding: 30px 0;
-	margin-right: 30px;
 }
 
-.price__long__table {
+.price-long__table {
 	font-size: 1.4rem;
 	text-align: center;
 }
-.price__raiting__icon {
+.price-long__raiting__icon {
 	width: 50px; 
 	height: 50px;
 	background: #ed1c24;
@@ -235,21 +244,22 @@ table td:last-child {
 	display: inline-block;
 	vertical-align: middle;
 	color: #fff;
-	box-shadow: 0 0 5px 1px rgba(0,0,0,0.3)
+	box-shadow: 0 0 5px 1px rgba(0,0,0,0.3);
+	margin-left: 10px;	
 }
 
-.raiting__icon-title {
+.price-long__raiting__icon-title {
 	text-align: center;
 	vertical-align: middle;
 }
 
-.raiting__icon-title span {
+.price-long__raiting__icon-title span {
 	display: inline-block;
 	font-size: 27px;
 	/*line-height: 1;*/
 }
 
-.price__raiting__available {
+.price-long__raiting__available {
 	display: inline-block;
 	vertical-align: middle;
 	padding: 5px 10px;
@@ -257,15 +267,54 @@ table td:last-child {
 	color: #fff;
 	border-radius: 2px;
 	font-size: 14px;
+	margin-left: 50px;
 }
 
-.buy__new-buy {
-	float: left;
+.price-long__buy {
+	margin: 30px auto;
+}
+.price-long__buy a {
+	-webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	margin-right: 45px;
+	max-width: 180px;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 20px 30px;
+}
+.buy__number {
+	color: rgba(30, 22, 54, 0.6);
+	box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;	
 }
 
-.buy__now-buy {
-	float: right;
+.buy__number:hover {
+	color: rgba(255, 255, 255, 0.85);
+	box-shadow: #1CB680 0 0px 0px 40px inset;
 }
+
+.buy__name {
+	color: rgba(30, 22, 54, 0.6);
+	box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+}
+
+.buy__name:hover {
+	color: rgba(255, 255, 255, 0.85);
+	box-shadow: #1CB680 0 0px 0px 40px inset;
+}
+
+.buy__now {
+	color: rgba(30, 22, 54, 0.6);
+	box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+}
+
+.buy__now:hover {
+	color: #1CB680;
+	box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 40px inset;
+}
+
 .footer {
 	padding: 60px 0;
 	background-color: #f5efef;
